@@ -1,0 +1,17 @@
+<config>
+  <set xpath="/windows/window[@name='windowTargetBar']/@controller">SoulslikeTargetBar.SoulslikeTargetBar, SoulslikeTargetBar</set>
+  <set xpath="/windows/window[@name='windowTargetBar']/@visibility">always</set>
+  <set xpath="/windows/window[@name='windowTargetBar']/rect[@visible='{isnotboss}']/@pos">-100,-85</set>
+  <set xpath="/windows/window[@name='windowTargetBar']/rect[@visible='{isnotboss}']/@width">200</set>
+  <set xpath="/windows/window[@name='windowTargetBar']/rect[@visible='{isnotboss}']/@height">12</set>
+  <set xpath="/windows/window[@name='windowTargetBar']/rect[@visible='{isnotboss}']/sprite/@color">0,0,0,192</set>
+  <set xpath="/windows/window[@name='windowTargetBar']/rect[@visible='{isnotboss}']/sprite/@width">200</set>
+  <set xpath="/windows/window[@name='windowTargetBar']/rect[@visible='{isnotboss}']/filledsprite/@width">200</set>
+  <remove xpath="/windows/window[@name='windowTargetBar']/rect[@visible='{isnotboss}']/label"/>
+  <append xpath="/windows/window[@name='windowTargetBar']/rect[@visible='{isnotboss}']">
+    <sprite depth="3" name="border" color="255,255,255,96" type="sliced" fillcenter="false"/>
+    <rect pos="0,-12" width="200" height="26" visible="{damage_visible}">
+      <label depth="1" name="TextContent" pos="9,-2" font_size="22" color="[white]" justify="left" pivot="topleft" text="{damage}" effect="outline" effect_distance="1,1" effect_color="0,0,0,100"/>
+    </rect>
+  </append>
+</config>
