@@ -36,7 +36,7 @@ namespace SoulslikeTargetBar
                 int newX = (int)screenPoint.x - camera.pixelWidth / 2;
                 int newY = (int)screenPoint.y - camera.pixelHeight + 12 + 26;
                 Vector2i oldPosition = ViewComponent.Position;
-                if (Math.Abs(oldPosition.x - newX) > 5 || Math.Abs(oldPosition.y - newY) > 5)
+                if (Math.Abs(oldPosition.x - newX) > 1 || Math.Abs(oldPosition.y - newY) > 1)
                 {
                     ViewComponent.Position = new Vector2i(newX, newY);
                 }
