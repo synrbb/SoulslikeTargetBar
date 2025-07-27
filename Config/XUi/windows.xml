@@ -10,6 +10,6 @@
   <remove xpath="/windows/window[@name='windowTargetBar']/rect[@visible='{isnotboss}']/label"/>
   <append xpath="/windows/window[@name='windowTargetBar']/rect[@visible='{isnotboss}']">
     <sprite depth="3" name="border" color="255,255,255,96" type="sliced" fillcenter="false"/>
-    <label depth="1" name="TextContent" pos="9,-14" font_size="22" color="[white]" justify="left" pivot="topleft" text="{damage}" effect="outline" effect_distance="1,1" effect_color="0,0,0,100" visible="{damage_visible}" height="24"/>
+    <label depth="1" name="TextContent" pos="9,-14" font_size="22" color="[white]" justify="left" pivot="topleft" text="{damage}" effect="outline" effect_distance="1,1" effect_color="0,0,0,100" visible="{damagevisible}" height="24"/>
   </append>
 </config>

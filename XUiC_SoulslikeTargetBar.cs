@@ -50,7 +50,7 @@ namespace SoulslikeTargetBar
                 case "damage":
                     value = statcurrentFormatterInt.Format(DamageStrength);
                     return true;
-                case "damage_visible":
+                case "damagevisible":
                     value = (DamageDuration > 0).ToString();
                     return true;
             }
