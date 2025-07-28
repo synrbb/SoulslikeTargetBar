@@ -1,7 +1,7 @@
 <config>
   <set xpath="/windows/window[@name='windowTargetBar']/@controller">SoulslikeTargetBar.SoulslikeTargetBar, SoulslikeTargetBar</set>
   <set xpath="/windows/window[@name='windowTargetBar']/@visibility">always</set>
-  <set xpath="/windows/window[@name='windowTargetBar']/rect[@visible='{isnotboss}']/@pos">-100,-85</set>
+  <set xpath="/windows/window[@name='windowTargetBar']/rect[@visible='{isnotboss}']/@pos">-100,38</set>
   <set xpath="/windows/window[@name='windowTargetBar']/rect[@visible='{isnotboss}']/@width">200</set>
   <set xpath="/windows/window[@name='windowTargetBar']/rect[@visible='{isnotboss}']/@height">12</set>
   <set xpath="/windows/window[@name='windowTargetBar']/rect[@visible='{isnotboss}']/sprite/@color">0,0,0,192</set>

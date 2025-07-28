@@ -34,7 +34,7 @@ namespace SoulslikeTargetBar
                 Camera camera = xui.playerUI.entityPlayer.playerCamera;
                 Vector3 screenPoint = camera.WorldToScreenPoint(Target.getHeadPosition() - Origin.position);
                 int newX = (int)screenPoint.x - camera.pixelWidth / 2;
-                int newY = (int)screenPoint.y - camera.pixelHeight + 12 + 26;
+                int newY = (int)screenPoint.y - camera.pixelHeight;
                 Vector2i oldPosition = ViewComponent.Position;
                 if (Math.Abs(oldPosition.x - newX) > 1 || Math.Abs(oldPosition.y - newY) > 1)
                 {
