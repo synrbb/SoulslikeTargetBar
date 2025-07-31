@@ -16,7 +16,7 @@
       <HintPath>../Managed/UnityEngine.CoreModule.dll</HintPath>
     </Reference>
     <Reference Include="0Harmony">
-      <HintPath>../0_TFP_Harmony/0Harmony.dll</HintPath>
+      <HintPath>../Mods/0_TFP_Harmony/0Harmony.dll</HintPath>
     </Reference>
   </ItemGroup>
 </Project>
