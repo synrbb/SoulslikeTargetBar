@@ -12,15 +12,20 @@ namespace SoulslikeTargetBar
             {
                 return;
             }
+            if (_damageSource.GetSource() == EnumDamageSource.Internal)
+            {
+                // Electric Fence Post, Burning, Bleeding, Radiation
+                return;
+            }
             switch (_damageSource.CreatorEntityId)
             {
                 case -2:
                     // Blade Trap, SMG Auto Turret, Shotgun Auto Turret
                     return;
                 case -1:
-                    if (_damageSource.getEntityId() == -1)
+                    if (_damageSource.getEntityId() != __instance.world.GetPrimaryPlayerId())
                     {
-                        // Burning, Bleeding, Electric Fence Post, Spike
+                        // Spike, Cop's explosion, Damage taken
                         return;
                     }
                     if (_damageSource.ItemClass?.Name == "ammoDartIron")
