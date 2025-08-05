@@ -15,6 +15,9 @@
     <Reference Include="UnityEngine.CoreModule">
       <HintPath>../Managed/UnityEngine.CoreModule.dll</HintPath>
     </Reference>
+    <Reference Include="LogLibrary">
+      <HintPath>../Managed/LogLibrary.dll</HintPath>
+    </Reference>
     <Reference Include="0Harmony">
       <HintPath>../Mods/0_TFP_Harmony/0Harmony.dll</HintPath>
     </Reference>
