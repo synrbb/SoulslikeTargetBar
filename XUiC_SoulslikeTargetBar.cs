@@ -65,7 +65,7 @@ namespace SoulslikeTargetBar
                 return;
             }
             XUiC_SoulslikeTargetBar targetBar = localPlayerUI.xui.FindWindowGroupByName("compass")?.GetChildByType<XUiC_SoulslikeTargetBar>();
-            if (targetBar != null)
+            if (targetBar != null && (targetBar.Target == null || targetBar.Target == target))
             {
                 targetBar.DamageStrength = strength;
                 targetBar.DamageTarget = target;
